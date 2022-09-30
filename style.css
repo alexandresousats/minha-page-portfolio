@@ -19,7 +19,7 @@ header {
     display: flex;
     align-items: center;
     background-color: #0c0811;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 nav {
