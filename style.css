@@ -119,7 +119,6 @@ li:hover {
 
 #flexbox-container {
     width: 100%;
-    height: 650px;
     display: flex;
     justify-content: center;
     background-color: #322d38;
@@ -127,17 +126,22 @@ li:hover {
 
 .flexbox-content {
     width: 70%;
-    margin: 20px 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 5px;
-    column-gap: 5px;    
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 250px);
+    gap: 10px;
+    width: max-content;
+    margin-top: 10px;
 }
 
 .box1 {
-    width: 100%;
-    height: 300px;
     background-color: #0c0811;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.box-img1{
+    background-image: url("./imgs/SEGUNDA\ FEIRA\ 26-09\ 01.png");
 }
 
 #footer-container {
@@ -197,7 +201,7 @@ hr { background-color: #720DFA; height: 1px; border: 0; }
 
     #banner-container{
         width: 100%;
-        height: 400px;
+        height: max-content;
         display: flex;
         flex-direction: column;
     }
@@ -223,16 +227,13 @@ hr { background-color: #720DFA; height: 1px; border: 0; }
         width: 100%;
     }
 
-    #flexbox-container{
-        width: 100%;
-        height: auto;
-    }
-
     .flexbox-content{
-        width: 95%;
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(3, 350px);
         transition: 1s;
+        width: max-content;
 
     }
 
